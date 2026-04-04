@@ -1,7 +1,12 @@
 """Model training and prediction utilities."""
 from sklearn.linear_model import LinearRegression
 
-def train_model(X, y):
-    model = LinearRegression()
-    model.fit(X, y)
-    return model.predict(X)
+class LinearModel:
+    def __init__(self):
+        self.model = LinearRegression()
+
+    def fit(self, X, y):
+        self.model.fit(X, y)
+
+    def predict(self, X):
+        return self.model.predict(X)
