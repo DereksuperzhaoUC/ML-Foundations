@@ -13,3 +13,8 @@ Core packages:
 - yfinance
 Editor:
 - VS Code (remote SSH)
+Run:
+- `micromamba activate vol`
+- `python main.py`
+Or:
+- `micromamba run -n vol python main.py`
